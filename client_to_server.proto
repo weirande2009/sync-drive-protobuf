@@ -1,0 +1,70 @@
+syntax = "proto3";
+package SyncCloudDrive;
+
+enum ClientCommandType{
+    C_REGISTER = 0;
+    C_LOGIN = 1;
+    C_SYNC = 2;
+    C_UPLOAD_FILE = 3;
+    C_DOWNLOAD = 4;
+    C_UPLOAD_DATA = 5;
+    C_DELETE_FILE = 6;
+    C_ADD_DIRECTORY = 7;
+    C_DELETE_DIRECTORY = 8;
+    C_MODIFY_USER = 9;
+}
+
+/* Register info from client to server */
+message CRegister{
+    string name = 1;                            // player name
+    string password_md5 = 2;                    // password in md5
+};
+
+/* Login info from client to server */
+message CLogin{
+    string name = 1;                            // player name
+    string password_md5 = 2;                    // password in md5
+};
+
+/* Sync from server */
+// message CSync{
+//     int32 state = 1;                            // state of the sync, 1-ok, 0-start sync
+// };
+
+/* Ask to upload a file */
+message CUploadFile{
+    string md5 = 1;                             // md5 of the file
+    int32 size = 2;                             // size of the file
+    string parent_id = 3;                       // parent directory id
+};
+
+message CDownLoad{
+    string file_id = 1;                         // id of the file
+    int32 slide_no = 2;                         // slide no. of the file
+};
+
+message CUploadData{
+    string md5 = 1;                             // md5 of the file
+    int32 slide_no = 2;                         // slide_no of the file
+    string data = 3;                            // data
+};
+
+message CDeleteFile{
+    string file_id = 1;                         // id of the file
+};
+
+message CAddDirectory{
+    string parent_id = 1;                       // parent id
+    string name = 2;                            // name of the directory
+};
+
+message CDeleteDirectory{
+    string directory_id = 1;                    // directory id
+};
+
+message CModifyUser{
+    int32 type = 1;                             // modification type
+    string content = 2;                         // content of the modification
+};
+
+

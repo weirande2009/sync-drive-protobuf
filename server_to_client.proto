@@ -1,0 +1,66 @@
+syntax = "proto3";
+package SyncCloudDrive;
+
+enum ServerCommandType{
+    S_REGISTER = 0;
+    S_LOGIN = 1;
+    S_SYNC = 2;
+    S_UPLOAD_FILE = 3;
+    S_DOWNLOAD = 4;
+    S_DELETE_FILE = 5;
+    S_ADD_DIRECTORY = 6;
+    S_DELETE_DIRECTORY = 7;
+    S_MODIFY_USER = 8;
+}
+
+message SRegister{
+    int32 state = 1;                            // register state
+};
+
+message SLogin{
+    int32 state = 1;                            // login state
+};
+
+message SSync{
+    message File{
+        string id = 1;                          // file id
+        string name = 2;                        // file name
+        string md5 = 3;                         // file md5
+    }
+    message Directory{
+        string id = 1;                          // directory id
+        string name = 2;                        // directory name
+        repeated Directory sons = 3;            // sons
+        repeated File files = 4;                // files
+    }
+    int32 state = 1;                            // state of sync. 0-ok, 1-sync
+    Directory root = 2;                         // root directory
+};
+
+message SUploadFile{
+    string md5 = 1;                             // md5 of the file
+    int32 slide_no = 2;                         // slide no of the file
+};
+
+message SDownload{
+    string file_id = 1;                         // id of the file
+    int32 slide_no = 2;                         // slide no of the file
+    string data = 3;                            // data
+};
+
+message SDeleteFile{
+    int32 state = 1;                             // delete state
+};
+
+message SAddDirectory{
+    int32 state = 1;                             // add state
+};
+
+message SDeleteDirectory{
+    int32 state = 1;                             // delete state
+};
+
+message SModifyUser{
+    int32 state = 1;                             // modify state
+};
+
