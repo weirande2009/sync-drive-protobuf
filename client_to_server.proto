@@ -34,8 +34,9 @@ message CLogin{
 /* Ask to upload a file */
 message CUploadFile{
     string md5 = 1;                             // md5 of the file
-    int32 size = 2;                             // size of the file
-    string parent_id = 3;                       // parent directory id
+    string name = 2;                            // name of the file
+    int32 size = 3;                             // size of the file
+    string parent_id = 4;                       // parent directory id
 };
 
 message CDownLoad{
