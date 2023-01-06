@@ -37,6 +37,7 @@ message CUploadFile{
     string name = 2;                            // name of the file
     int32 size = 3;                             // size of the file
     string parent_id = 4;                       // parent directory id
+    int32 no = 5;                               // no. of the file in client part
 };
 
 message CDownLoad{
@@ -48,6 +49,7 @@ message CUploadData{
     string md5 = 1;                             // md5 of the file
     int32 slide_no = 2;                         // slide_no of the file
     string data = 3;                            // data
+    int32 no = 4;                               // no. of the file in client part
 };
 
 message CDeleteFile{

@@ -38,7 +38,7 @@ message SSync{
 };
 
 message SUploadFile{
-    string md5 = 1;                             // md5 of the file
+    int32 no = 1;                               // no. of the file
     int32 slide_no = 2;                         // slide no of the file
 };
 
