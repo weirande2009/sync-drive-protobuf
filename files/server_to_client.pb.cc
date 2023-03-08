@@ -14,221 +14,180 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_server_5fto_5fclient_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SSync_Directory_server_5fto_5fclient_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_server_5fto_5fclient_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSync_File_server_5fto_5fclient_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace SyncCloudDrive {
-class SRegisterDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SRegister> _instance;
-} _SRegister_default_instance_;
-class SLoginDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SLogin> _instance;
-} _SLogin_default_instance_;
-class SSync_FileDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSync_File> _instance;
-} _SSync_File_default_instance_;
-class SSync_DirectoryDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSync_Directory> _instance;
-} _SSync_Directory_default_instance_;
-class SSyncDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSync> _instance;
-} _SSync_default_instance_;
-class SUploadFileDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SUploadFile> _instance;
-} _SUploadFile_default_instance_;
-class SDownloadDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SDownload> _instance;
-} _SDownload_default_instance_;
-class SDeleteFileDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SDeleteFile> _instance;
-} _SDeleteFile_default_instance_;
-class SAddDirectoryDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SAddDirectory> _instance;
-} _SAddDirectory_default_instance_;
-class SDeleteDirectoryDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SDeleteDirectory> _instance;
-} _SDeleteDirectory_default_instance_;
-class SModifyUserDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SModifyUser> _instance;
-} _SModifyUser_default_instance_;
+PROTOBUF_CONSTEXPR SRegister::SRegister(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SRegisterDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SRegisterDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SRegisterDefaultTypeInternal() {}
+  union {
+    SRegister _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SRegisterDefaultTypeInternal _SRegister_default_instance_;
+PROTOBUF_CONSTEXPR SLogin::SLogin(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SLoginDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SLoginDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SLoginDefaultTypeInternal() {}
+  union {
+    SLogin _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SLoginDefaultTypeInternal _SLogin_default_instance_;
+PROTOBUF_CONSTEXPR SSync_File::SSync_File(
+    ::_pbi::ConstantInitialized)
+  : id_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{})
+  , name_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{})
+  , md5_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}){}
+struct SSync_FileDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SSync_FileDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SSync_FileDefaultTypeInternal() {}
+  union {
+    SSync_File _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SSync_FileDefaultTypeInternal _SSync_File_default_instance_;
+PROTOBUF_CONSTEXPR SSync_Directory::SSync_Directory(
+    ::_pbi::ConstantInitialized)
+  : sons_()
+  , files_()
+  , id_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{})
+  , name_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}){}
+struct SSync_DirectoryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SSync_DirectoryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SSync_DirectoryDefaultTypeInternal() {}
+  union {
+    SSync_Directory _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SSync_DirectoryDefaultTypeInternal _SSync_Directory_default_instance_;
+PROTOBUF_CONSTEXPR SSync::SSync(
+    ::_pbi::ConstantInitialized)
+  : root_(nullptr)
+  , state_(0){}
+struct SSyncDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SSyncDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SSyncDefaultTypeInternal() {}
+  union {
+    SSync _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SSyncDefaultTypeInternal _SSync_default_instance_;
+PROTOBUF_CONSTEXPR SUploadFile::SUploadFile(
+    ::_pbi::ConstantInitialized)
+  : no_(0)
+  , slide_no_(0){}
+struct SUploadFileDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SUploadFileDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SUploadFileDefaultTypeInternal() {}
+  union {
+    SUploadFile _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SUploadFileDefaultTypeInternal _SUploadFile_default_instance_;
+PROTOBUF_CONSTEXPR SDownload::SDownload(
+    ::_pbi::ConstantInitialized)
+  : file_id_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{})
+  , data_(&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{})
+  , slide_no_(0){}
+struct SDownloadDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SDownloadDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SDownloadDefaultTypeInternal() {}
+  union {
+    SDownload _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SDownloadDefaultTypeInternal _SDownload_default_instance_;
+PROTOBUF_CONSTEXPR SDeleteFile::SDeleteFile(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SDeleteFileDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SDeleteFileDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SDeleteFileDefaultTypeInternal() {}
+  union {
+    SDeleteFile _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SDeleteFileDefaultTypeInternal _SDeleteFile_default_instance_;
+PROTOBUF_CONSTEXPR SAddDirectory::SAddDirectory(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SAddDirectoryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SAddDirectoryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SAddDirectoryDefaultTypeInternal() {}
+  union {
+    SAddDirectory _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SAddDirectoryDefaultTypeInternal _SAddDirectory_default_instance_;
+PROTOBUF_CONSTEXPR SDeleteDirectory::SDeleteDirectory(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SDeleteDirectoryDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SDeleteDirectoryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SDeleteDirectoryDefaultTypeInternal() {}
+  union {
+    SDeleteDirectory _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SDeleteDirectoryDefaultTypeInternal _SDeleteDirectory_default_instance_;
+PROTOBUF_CONSTEXPR SModifyUser::SModifyUser(
+    ::_pbi::ConstantInitialized)
+  : state_(0){}
+struct SModifyUserDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SModifyUserDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SModifyUserDefaultTypeInternal() {}
+  union {
+    SModifyUser _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SModifyUserDefaultTypeInternal _SModifyUser_default_instance_;
 }  // namespace SyncCloudDrive
-static void InitDefaultsscc_info_SAddDirectory_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_server_5fto_5fclient_2eproto[11];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_server_5fto_5fclient_2eproto[1];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_server_5fto_5fclient_2eproto = nullptr;
 
-  {
-    void* ptr = &::SyncCloudDrive::_SAddDirectory_default_instance_;
-    new (ptr) ::SyncCloudDrive::SAddDirectory();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SAddDirectory_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SAddDirectory_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SDeleteDirectory_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SDeleteDirectory_default_instance_;
-    new (ptr) ::SyncCloudDrive::SDeleteDirectory();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SDeleteDirectory_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SDeleteDirectory_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SDeleteFile_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SDeleteFile_default_instance_;
-    new (ptr) ::SyncCloudDrive::SDeleteFile();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SDeleteFile_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SDeleteFile_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SDownload_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SDownload_default_instance_;
-    new (ptr) ::SyncCloudDrive::SDownload();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SDownload_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SDownload_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SLogin_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SLogin_default_instance_;
-    new (ptr) ::SyncCloudDrive::SLogin();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SLogin_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SLogin_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SModifyUser_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SModifyUser_default_instance_;
-    new (ptr) ::SyncCloudDrive::SModifyUser();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SModifyUser_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SModifyUser_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SRegister_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SRegister_default_instance_;
-    new (ptr) ::SyncCloudDrive::SRegister();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SRegister_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SRegister_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SSync_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SSync_default_instance_;
-    new (ptr) ::SyncCloudDrive::SSync();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SSync_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SSync_server_5fto_5fclient_2eproto}, {
-      &scc_info_SSync_Directory_server_5fto_5fclient_2eproto.base,}};
-
-static void InitDefaultsscc_info_SSync_Directory_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SSync_Directory_default_instance_;
-    new (ptr) ::SyncCloudDrive::SSync_Directory();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SSync_Directory_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SSync_Directory_server_5fto_5fclient_2eproto}, {
-      &scc_info_SSync_File_server_5fto_5fclient_2eproto.base,}};
-
-static void InitDefaultsscc_info_SSync_File_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SSync_File_default_instance_;
-    new (ptr) ::SyncCloudDrive::SSync_File();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSync_File_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SSync_File_server_5fto_5fclient_2eproto}, {}};
-
-static void InitDefaultsscc_info_SUploadFile_server_5fto_5fclient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::SyncCloudDrive::_SUploadFile_default_instance_;
-    new (ptr) ::SyncCloudDrive::SUploadFile();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SUploadFile_server_5fto_5fclient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SUploadFile_server_5fto_5fclient_2eproto}, {}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_server_5fto_5fclient_2eproto[11];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_server_5fto_5fclient_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_server_5fto_5fclient_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_server_5fto_5fclient_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SRegister, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SRegister, state_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SLogin, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SLogin, state_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_File, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_File, id_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_File, name_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_File, md5_),
@@ -237,6 +196,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_Directory, id_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_Directory, name_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync_Directory, sons_),
@@ -246,6 +206,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync, state_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SSync, root_),
   ~0u,  // no _has_bits_
@@ -253,6 +214,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SUploadFile, no_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SUploadFile, slide_no_),
   ~0u,  // no _has_bits_
@@ -260,6 +222,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDownload, file_id_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDownload, slide_no_),
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDownload, data_),
@@ -268,52 +231,56 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_server_5fto_5fclient_2eproto::
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDeleteFile, state_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SAddDirectory, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SAddDirectory, state_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDeleteDirectory, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SDeleteDirectory, state_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SModifyUser, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SyncCloudDrive::SModifyUser, state_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::SyncCloudDrive::SRegister)},
-  { 6, -1, sizeof(::SyncCloudDrive::SLogin)},
-  { 12, -1, sizeof(::SyncCloudDrive::SSync_File)},
-  { 20, -1, sizeof(::SyncCloudDrive::SSync_Directory)},
-  { 29, -1, sizeof(::SyncCloudDrive::SSync)},
-  { 36, -1, sizeof(::SyncCloudDrive::SUploadFile)},
-  { 43, -1, sizeof(::SyncCloudDrive::SDownload)},
-  { 51, -1, sizeof(::SyncCloudDrive::SDeleteFile)},
-  { 57, -1, sizeof(::SyncCloudDrive::SAddDirectory)},
-  { 63, -1, sizeof(::SyncCloudDrive::SDeleteDirectory)},
-  { 69, -1, sizeof(::SyncCloudDrive::SModifyUser)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::SyncCloudDrive::SRegister)},
+  { 7, -1, -1, sizeof(::SyncCloudDrive::SLogin)},
+  { 14, -1, -1, sizeof(::SyncCloudDrive::SSync_File)},
+  { 23, -1, -1, sizeof(::SyncCloudDrive::SSync_Directory)},
+  { 33, -1, -1, sizeof(::SyncCloudDrive::SSync)},
+  { 41, -1, -1, sizeof(::SyncCloudDrive::SUploadFile)},
+  { 49, -1, -1, sizeof(::SyncCloudDrive::SDownload)},
+  { 58, -1, -1, sizeof(::SyncCloudDrive::SDeleteFile)},
+  { 65, -1, -1, sizeof(::SyncCloudDrive::SAddDirectory)},
+  { 72, -1, -1, sizeof(::SyncCloudDrive::SDeleteDirectory)},
+  { 79, -1, -1, sizeof(::SyncCloudDrive::SModifyUser)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SRegister_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SLogin_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SSync_File_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SSync_Directory_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SSync_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SUploadFile_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SDownload_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SDeleteFile_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SAddDirectory_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SDeleteDirectory_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SyncCloudDrive::_SModifyUser_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::SyncCloudDrive::_SRegister_default_instance_._instance,
+  &::SyncCloudDrive::_SLogin_default_instance_._instance,
+  &::SyncCloudDrive::_SSync_File_default_instance_._instance,
+  &::SyncCloudDrive::_SSync_Directory_default_instance_._instance,
+  &::SyncCloudDrive::_SSync_default_instance_._instance,
+  &::SyncCloudDrive::_SUploadFile_default_instance_._instance,
+  &::SyncCloudDrive::_SDownload_default_instance_._instance,
+  &::SyncCloudDrive::_SDeleteFile_default_instance_._instance,
+  &::SyncCloudDrive::_SAddDirectory_default_instance_._instance,
+  &::SyncCloudDrive::_SDeleteDirectory_default_instance_._instance,
+  &::SyncCloudDrive::_SModifyUser_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_server_5fto_5fclient_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -338,31 +305,21 @@ const char descriptor_table_protodef_server_5fto_5fclient_2eproto[] PROTOBUF_SEC
   "ELETE_DIRECTORY\020\007\022\021\n\rS_MODIFY_USER\020\010b\006pr"
   "oto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_server_5fto_5fclient_2eproto_deps[1] = {
+static ::_pbi::once_flag descriptor_table_server_5fto_5fclient_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_server_5fto_5fclient_2eproto = {
+    false, false, 764, descriptor_table_protodef_server_5fto_5fclient_2eproto,
+    "server_to_client.proto",
+    &descriptor_table_server_5fto_5fclient_2eproto_once, nullptr, 0, 11,
+    schemas, file_default_instances, TableStruct_server_5fto_5fclient_2eproto::offsets,
+    file_level_metadata_server_5fto_5fclient_2eproto, file_level_enum_descriptors_server_5fto_5fclient_2eproto,
+    file_level_service_descriptors_server_5fto_5fclient_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_server_5fto_5fclient_2eproto_sccs[11] = {
-  &scc_info_SAddDirectory_server_5fto_5fclient_2eproto.base,
-  &scc_info_SDeleteDirectory_server_5fto_5fclient_2eproto.base,
-  &scc_info_SDeleteFile_server_5fto_5fclient_2eproto.base,
-  &scc_info_SDownload_server_5fto_5fclient_2eproto.base,
-  &scc_info_SLogin_server_5fto_5fclient_2eproto.base,
-  &scc_info_SModifyUser_server_5fto_5fclient_2eproto.base,
-  &scc_info_SRegister_server_5fto_5fclient_2eproto.base,
-  &scc_info_SSync_server_5fto_5fclient_2eproto.base,
-  &scc_info_SSync_Directory_server_5fto_5fclient_2eproto.base,
-  &scc_info_SSync_File_server_5fto_5fclient_2eproto.base,
-  &scc_info_SUploadFile_server_5fto_5fclient_2eproto.base,
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_server_5fto_5fclient_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_server_5fto_5fclient_2eproto = {
-  false, false, descriptor_table_protodef_server_5fto_5fclient_2eproto, "server_to_client.proto", 764,
-  &descriptor_table_server_5fto_5fclient_2eproto_once, descriptor_table_server_5fto_5fclient_2eproto_sccs, descriptor_table_server_5fto_5fclient_2eproto_deps, 11, 0,
-  schemas, file_default_instances, TableStruct_server_5fto_5fclient_2eproto::offsets,
-  file_level_metadata_server_5fto_5fclient_2eproto, 11, file_level_enum_descriptors_server_5fto_5fclient_2eproto, file_level_service_descriptors_server_5fto_5fclient_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_server_5fto_5fclient_2eproto_getter() {
+  return &descriptor_table_server_5fto_5fclient_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_server_5fto_5fclient_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_server_5fto_5fclient_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_server_5fto_5fclient_2eproto(&descriptor_table_server_5fto_5fclient_2eproto);
 namespace SyncCloudDrive {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ServerCommandType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_server_5fto_5fclient_2eproto);
@@ -392,10 +349,10 @@ class SRegister::_Internal {
  public:
 };
 
-SRegister::SRegister(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SRegister::SRegister(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SRegister)
 }
 SRegister::SRegister(const SRegister& from)
@@ -405,38 +362,30 @@ SRegister::SRegister(const SRegister& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SRegister)
 }
 
-void SRegister::SharedCtor() {
-  state_ = 0;
+inline void SRegister::SharedCtor() {
+state_ = 0;
 }
 
 SRegister::~SRegister() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SRegister)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SRegister::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SRegister::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SRegister::ArenaDtor(void* object) {
-  SRegister* _this = reinterpret_cast< SRegister* >(object);
-  (void)_this;
-}
-void SRegister::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SRegister::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SRegister& SRegister::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SRegister_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SRegister::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SRegister)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -444,56 +393,57 @@ void SRegister::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SRegister::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SRegister::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SRegister::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SRegister::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SRegister)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SRegister)
@@ -504,58 +454,41 @@ size_t SRegister::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SRegister)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SRegister::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SRegister)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SRegister* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SRegister>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SRegister)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SRegister)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SRegister::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SRegister::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SRegister::GetClassData() const { return &_class_data_; }
+
+void SRegister::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SRegister *>(to)->MergeFrom(
+      static_cast<const SRegister &>(from));
 }
+
 
 void SRegister::MergeFrom(const SRegister& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SRegister)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SRegister::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SRegister)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SRegister::CopyFrom(const SRegister& from) {
@@ -571,14 +504,15 @@ bool SRegister::IsInitialized() const {
 
 void SRegister::InternalSwap(SRegister* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SRegister::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[0]);
 }
-
 
 // ===================================================================
 
@@ -586,10 +520,10 @@ class SLogin::_Internal {
  public:
 };
 
-SLogin::SLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SLogin::SLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SLogin)
 }
 SLogin::SLogin(const SLogin& from)
@@ -599,38 +533,30 @@ SLogin::SLogin(const SLogin& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SLogin)
 }
 
-void SLogin::SharedCtor() {
-  state_ = 0;
+inline void SLogin::SharedCtor() {
+state_ = 0;
 }
 
 SLogin::~SLogin() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SLogin)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SLogin::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SLogin::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SLogin::ArenaDtor(void* object) {
-  SLogin* _this = reinterpret_cast< SLogin* >(object);
-  (void)_this;
-}
-void SLogin::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SLogin::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SLogin& SLogin::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SLogin_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SLogin::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SLogin)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -638,56 +564,57 @@ void SLogin::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SLogin::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SLogin::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SLogin::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SLogin::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SLogin)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SLogin)
@@ -698,58 +625,41 @@ size_t SLogin::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SLogin)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SLogin::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SLogin)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SLogin* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SLogin>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SLogin)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SLogin)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SLogin::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SLogin::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SLogin::GetClassData() const { return &_class_data_; }
+
+void SLogin::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SLogin *>(to)->MergeFrom(
+      static_cast<const SLogin &>(from));
 }
+
 
 void SLogin::MergeFrom(const SLogin& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SLogin)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SLogin::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SLogin)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SLogin::CopyFrom(const SLogin& from) {
@@ -765,14 +675,15 @@ bool SLogin::IsInitialized() const {
 
 void SLogin::InternalSwap(SLogin* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SLogin::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[1]);
 }
-
 
 // ===================================================================
 
@@ -780,71 +691,80 @@ class SSync_File::_Internal {
  public:
 };
 
-SSync_File::SSync_File(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SSync_File::SSync_File(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SSync.File)
 }
 SSync_File::SSync_File(const SSync_File& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_id().empty()) {
-    id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_id(), 
-      GetArena());
+    id_.Set(from._internal_id(), 
+      GetArenaForAllocation());
   }
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_name().empty()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArena());
+    name_.Set(from._internal_name(), 
+      GetArenaForAllocation());
   }
-  md5_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  md5_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    md5_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_md5().empty()) {
-    md5_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_md5(), 
-      GetArena());
+    md5_.Set(from._internal_md5(), 
+      GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SSync.File)
 }
 
-void SSync_File::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SSync_File_server_5fto_5fclient_2eproto.base);
-  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  md5_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SSync_File::SharedCtor() {
+id_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  id_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+name_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  name_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+md5_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  md5_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SSync_File::~SSync_File() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SSync.File)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SSync_File::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  md5_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SSync_File::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  id_.Destroy();
+  name_.Destroy();
+  md5_.Destroy();
 }
 
-void SSync_File::ArenaDtor(void* object) {
-  SSync_File* _this = reinterpret_cast< SSync_File* >(object);
-  (void)_this;
-}
-void SSync_File::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSync_File::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SSync_File& SSync_File::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSync_File_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SSync_File::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SSync.File)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -854,70 +774,73 @@ void SSync_File::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SSync_File::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SSync_File::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SSync.File.id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SSync.File.id"));
+        } else
+          goto handle_unusual;
         continue;
       // string name = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SSync.File.name"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SSync.File.name"));
+        } else
+          goto handle_unusual;
         continue;
       // string md5 = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_md5();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SSync.File.md5"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SSync.File.md5"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSync_File::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SSync_File::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SSync.File)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string id = 1;
-  if (this->id().size() > 0) {
+  if (!this->_internal_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -927,7 +850,7 @@ failure:
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -937,7 +860,7 @@ failure:
   }
 
   // string md5 = 3;
-  if (this->md5().size() > 0) {
+  if (!this->_internal_md5().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_md5().data(), static_cast<int>(this->_internal_md5().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -947,7 +870,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SSync.File)
@@ -958,78 +881,63 @@ size_t SSync_File::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SSync.File)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string id = 1;
-  if (this->id().size() > 0) {
+  if (!this->_internal_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_id());
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
 
   // string md5 = 3;
-  if (this->md5().size() > 0) {
+  if (!this->_internal_md5().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_md5());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SSync_File::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SSync.File)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SSync_File* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SSync_File>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SSync.File)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SSync.File)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SSync_File::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SSync_File::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SSync_File::GetClassData() const { return &_class_data_; }
+
+void SSync_File::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SSync_File *>(to)->MergeFrom(
+      static_cast<const SSync_File &>(from));
 }
+
 
 void SSync_File::MergeFrom(const SSync_File& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SSync.File)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.id().size() > 0) {
+  if (!from._internal_id().empty()) {
     _internal_set_id(from._internal_id());
   }
-  if (from.name().size() > 0) {
+  if (!from._internal_name().empty()) {
     _internal_set_name(from._internal_name());
   }
-  if (from.md5().size() > 0) {
+  if (!from._internal_md5().empty()) {
     _internal_set_md5(from._internal_md5());
   }
-}
-
-void SSync_File::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SSync.File)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SSync_File::CopyFrom(const SSync_File& from) {
@@ -1045,16 +953,28 @@ bool SSync_File::IsInitialized() const {
 
 void SSync_File::InternalSwap(SSync_File* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  md5_.Swap(&other->md5_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &id_, lhs_arena,
+      &other->id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &name_, lhs_arena,
+      &other->name_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &md5_, lhs_arena,
+      &other->md5_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSync_File::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[2]);
 }
-
 
 // ===================================================================
 
@@ -1062,12 +982,12 @@ class SSync_Directory::_Internal {
  public:
 };
 
-SSync_Directory::SSync_Directory(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+SSync_Directory::SSync_Directory(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   sons_(arena),
   files_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SSync.Directory)
 }
 SSync_Directory::SSync_Directory(const SSync_Directory& from)
@@ -1075,55 +995,58 @@ SSync_Directory::SSync_Directory(const SSync_Directory& from)
       sons_(from.sons_),
       files_(from.files_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_id().empty()) {
-    id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_id(), 
-      GetArena());
+    id_.Set(from._internal_id(), 
+      GetArenaForAllocation());
   }
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_name().empty()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArena());
+    name_.Set(from._internal_name(), 
+      GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SSync.Directory)
 }
 
-void SSync_Directory::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SSync_Directory_server_5fto_5fclient_2eproto.base);
-  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SSync_Directory::SharedCtor() {
+id_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  id_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+name_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  name_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SSync_Directory::~SSync_Directory() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SSync.Directory)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SSync_Directory::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SSync_Directory::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  id_.Destroy();
+  name_.Destroy();
 }
 
-void SSync_Directory::ArenaDtor(void* object) {
-  SSync_Directory* _this = reinterpret_cast< SSync_Directory* >(object);
-  (void)_this;
-}
-void SSync_Directory::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSync_Directory::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SSync_Directory& SSync_Directory::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSync_Directory_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SSync_Directory::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SSync.Directory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1134,34 +1057,35 @@ void SSync_Directory::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SSync_Directory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SSync_Directory::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SSync.Directory.id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SSync.Directory.id"));
+        } else
+          goto handle_unusual;
         continue;
       // string name = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SSync.Directory.name"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SSync.Directory.name"));
+        } else
+          goto handle_unusual;
         continue;
       // repeated .SyncCloudDrive.SSync.Directory sons = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1169,11 +1093,12 @@ const char* SSync_Directory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .SyncCloudDrive.SSync.File files = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1181,38 +1106,40 @@ const char* SSync_Directory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSync_Directory::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SSync_Directory::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SSync.Directory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string id = 1;
-  if (this->id().size() > 0) {
+  if (!this->_internal_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1222,7 +1149,7 @@ failure:
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1232,23 +1159,23 @@ failure:
   }
 
   // repeated .SyncCloudDrive.SSync.Directory sons = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_sons_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_sons_size()); i < n; i++) {
+    const auto& repfield = this->_internal_sons(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_sons(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .SyncCloudDrive.SSync.File files = 4;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_files_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_files_size()); i < n; i++) {
+    const auto& repfield = this->_internal_files(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_files(i), target, stream);
+        InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SSync.Directory)
@@ -1259,7 +1186,7 @@ size_t SSync_Directory::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SSync.Directory)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1278,65 +1205,50 @@ size_t SSync_Directory::ByteSizeLong() const {
   }
 
   // string id = 1;
-  if (this->id().size() > 0) {
+  if (!this->_internal_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_id());
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SSync_Directory::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SSync.Directory)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SSync_Directory* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SSync_Directory>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SSync.Directory)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SSync.Directory)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SSync_Directory::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SSync_Directory::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SSync_Directory::GetClassData() const { return &_class_data_; }
+
+void SSync_Directory::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SSync_Directory *>(to)->MergeFrom(
+      static_cast<const SSync_Directory &>(from));
 }
+
 
 void SSync_Directory::MergeFrom(const SSync_Directory& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SSync.Directory)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   sons_.MergeFrom(from.sons_);
   files_.MergeFrom(from.files_);
-  if (from.id().size() > 0) {
+  if (!from._internal_id().empty()) {
     _internal_set_id(from._internal_id());
   }
-  if (from.name().size() > 0) {
+  if (!from._internal_name().empty()) {
     _internal_set_name(from._internal_name());
   }
-}
-
-void SSync_Directory::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SSync.Directory)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SSync_Directory::CopyFrom(const SSync_Directory& from) {
@@ -1352,17 +1264,26 @@ bool SSync_Directory::IsInitialized() const {
 
 void SSync_Directory::InternalSwap(SSync_Directory* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   sons_.InternalSwap(&other->sons_);
   files_.InternalSwap(&other->files_);
-  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &id_, lhs_arena,
+      &other->id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &name_, lhs_arena,
+      &other->name_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSync_Directory::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[3]);
 }
-
 
 // ===================================================================
 
@@ -1375,10 +1296,10 @@ const ::SyncCloudDrive::SSync_Directory&
 SSync::_Internal::root(const SSync* msg) {
   return *msg->root_;
 }
-SSync::SSync(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SSync::SSync(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SSync)
 }
 SSync::SSync(const SSync& from)
@@ -1393,47 +1314,38 @@ SSync::SSync(const SSync& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SSync)
 }
 
-void SSync::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SSync_server_5fto_5fclient_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&root_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&state_) -
-      reinterpret_cast<char*>(&root_)) + sizeof(state_));
+inline void SSync::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&root_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&state_) -
+    reinterpret_cast<char*>(&root_)) + sizeof(state_));
 }
 
 SSync::~SSync() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SSync)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SSync::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SSync::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete root_;
 }
 
-void SSync::ArenaDtor(void* object) {
-  SSync* _this = reinterpret_cast< SSync* >(object);
-  (void)_this;
-}
-void SSync::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSync::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SSync& SSync::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSync_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SSync::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SSync)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && root_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && root_ != nullptr) {
     delete root_;
   }
   root_ = nullptr;
@@ -1441,71 +1353,72 @@ void SSync::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SSync::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SSync::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .SyncCloudDrive.SSync.Directory root = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_root(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSync::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SSync::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SSync)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   // .SyncCloudDrive.SSync.Directory root = 2;
-  if (this->has_root()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_root()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::root(this), target, stream);
+      InternalWriteMessage(2, _Internal::root(this),
+        _Internal::root(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SSync)
@@ -1516,68 +1429,51 @@ size_t SSync::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SSync)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .SyncCloudDrive.SSync.Directory root = 2;
-  if (this->has_root()) {
+  if (this->_internal_has_root()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *root_);
   }
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SSync::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SSync)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SSync* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SSync>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SSync)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SSync)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SSync::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SSync::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SSync::GetClassData() const { return &_class_data_; }
+
+void SSync::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SSync *>(to)->MergeFrom(
+      static_cast<const SSync &>(from));
 }
+
 
 void SSync::MergeFrom(const SSync& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SSync)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_root()) {
+  if (from._internal_has_root()) {
     _internal_mutable_root()->::SyncCloudDrive::SSync_Directory::MergeFrom(from._internal_root());
   }
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SSync::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SSync)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SSync::CopyFrom(const SSync& from) {
@@ -1593,7 +1489,7 @@ bool SSync::IsInitialized() const {
 
 void SSync::InternalSwap(SSync* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SSync, state_)
       + sizeof(SSync::state_)
@@ -1603,9 +1499,10 @@ void SSync::InternalSwap(SSync* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSync::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[4]);
 }
-
 
 // ===================================================================
 
@@ -1613,10 +1510,10 @@ class SUploadFile::_Internal {
  public:
 };
 
-SUploadFile::SUploadFile(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SUploadFile::SUploadFile(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SUploadFile)
 }
 SUploadFile::SUploadFile(const SUploadFile& from)
@@ -1628,41 +1525,33 @@ SUploadFile::SUploadFile(const SUploadFile& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SUploadFile)
 }
 
-void SUploadFile::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&no_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&slide_no_) -
-      reinterpret_cast<char*>(&no_)) + sizeof(slide_no_));
+inline void SUploadFile::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&no_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&slide_no_) -
+    reinterpret_cast<char*>(&no_)) + sizeof(slide_no_));
 }
 
 SUploadFile::~SUploadFile() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SUploadFile)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SUploadFile::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SUploadFile::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SUploadFile::ArenaDtor(void* object) {
-  SUploadFile* _this = reinterpret_cast< SUploadFile* >(object);
-  (void)_this;
-}
-void SUploadFile::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SUploadFile::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SUploadFile& SUploadFile::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SUploadFile_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SUploadFile::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SUploadFile)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1672,69 +1561,71 @@ void SUploadFile::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SUploadFile::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SUploadFile::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 no = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int32 slide_no = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          slide_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          slide_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SUploadFile::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SUploadFile::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SUploadFile)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 no = 1;
-  if (this->no() != 0) {
+  if (this->_internal_no() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_no(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_no(), target);
   }
 
   // int32 slide_no = 2;
-  if (this->slide_no() != 0) {
+  if (this->_internal_slide_no() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_slide_no(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_slide_no(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SUploadFile)
@@ -1745,68 +1636,49 @@ size_t SUploadFile::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SUploadFile)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 no = 1;
-  if (this->no() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_no());
+  if (this->_internal_no() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_no());
   }
 
   // int32 slide_no = 2;
-  if (this->slide_no() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_slide_no());
+  if (this->_internal_slide_no() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_slide_no());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SUploadFile::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SUploadFile)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SUploadFile* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SUploadFile>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SUploadFile)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SUploadFile)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SUploadFile::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SUploadFile::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SUploadFile::GetClassData() const { return &_class_data_; }
+
+void SUploadFile::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SUploadFile *>(to)->MergeFrom(
+      static_cast<const SUploadFile &>(from));
 }
+
 
 void SUploadFile::MergeFrom(const SUploadFile& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SUploadFile)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.no() != 0) {
+  if (from._internal_no() != 0) {
     _internal_set_no(from._internal_no());
   }
-  if (from.slide_no() != 0) {
+  if (from._internal_slide_no() != 0) {
     _internal_set_slide_no(from._internal_slide_no());
   }
-}
-
-void SUploadFile::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SUploadFile)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SUploadFile::CopyFrom(const SUploadFile& from) {
@@ -1822,7 +1694,7 @@ bool SUploadFile::IsInitialized() const {
 
 void SUploadFile::InternalSwap(SUploadFile* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SUploadFile, slide_no_)
       + sizeof(SUploadFile::slide_no_)
@@ -1832,9 +1704,10 @@ void SUploadFile::InternalSwap(SUploadFile* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SUploadFile::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[5]);
 }
-
 
 // ===================================================================
 
@@ -1842,66 +1715,69 @@ class SDownload::_Internal {
  public:
 };
 
-SDownload::SDownload(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SDownload::SDownload(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SDownload)
 }
 SDownload::SDownload(const SDownload& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  file_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  file_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    file_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_file_id().empty()) {
-    file_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_file_id(), 
-      GetArena());
+    file_id_.Set(from._internal_file_id(), 
+      GetArenaForAllocation());
   }
-  data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  data_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    data_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_data().empty()) {
-    data_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_data(), 
-      GetArena());
+    data_.Set(from._internal_data(), 
+      GetArenaForAllocation());
   }
   slide_no_ = from.slide_no_;
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SDownload)
 }
 
-void SDownload::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SDownload_server_5fto_5fclient_2eproto.base);
-  file_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  slide_no_ = 0;
+inline void SDownload::SharedCtor() {
+file_id_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  file_id_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+data_.InitDefault();
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  data_.Set("", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+slide_no_ = 0;
 }
 
 SDownload::~SDownload() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SDownload)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SDownload::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  file_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SDownload::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  file_id_.Destroy();
+  data_.Destroy();
 }
 
-void SDownload::ArenaDtor(void* object) {
-  SDownload* _this = reinterpret_cast< SDownload* >(object);
-  (void)_this;
-}
-void SDownload::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SDownload::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SDownload& SDownload::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SDownload_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SDownload::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SDownload)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1911,68 +1787,71 @@ void SDownload::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SDownload::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SDownload::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string file_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_file_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SDownload.file_id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SDownload.file_id"));
+        } else
+          goto handle_unusual;
         continue;
       // int32 slide_no = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          slide_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          slide_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string data = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_data();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SyncCloudDrive.SDownload.data"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "SyncCloudDrive.SDownload.data"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SDownload::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SDownload::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SDownload)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string file_id = 1;
-  if (this->file_id().size() > 0) {
+  if (!this->_internal_file_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_file_id().data(), static_cast<int>(this->_internal_file_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1982,13 +1861,13 @@ failure:
   }
 
   // int32 slide_no = 2;
-  if (this->slide_no() != 0) {
+  if (this->_internal_slide_no() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_slide_no(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_slide_no(), target);
   }
 
   // string data = 3;
-  if (this->data().size() > 0) {
+  if (!this->_internal_data().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_data().data(), static_cast<int>(this->_internal_data().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1998,7 +1877,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SDownload)
@@ -2009,78 +1888,61 @@ size_t SDownload::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SDownload)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string file_id = 1;
-  if (this->file_id().size() > 0) {
+  if (!this->_internal_file_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_file_id());
   }
 
   // string data = 3;
-  if (this->data().size() > 0) {
+  if (!this->_internal_data().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_data());
   }
 
   // int32 slide_no = 2;
-  if (this->slide_no() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_slide_no());
+  if (this->_internal_slide_no() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_slide_no());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SDownload::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SDownload)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SDownload* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SDownload>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SDownload)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SDownload)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SDownload::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SDownload::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SDownload::GetClassData() const { return &_class_data_; }
+
+void SDownload::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SDownload *>(to)->MergeFrom(
+      static_cast<const SDownload &>(from));
 }
+
 
 void SDownload::MergeFrom(const SDownload& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SDownload)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.file_id().size() > 0) {
+  if (!from._internal_file_id().empty()) {
     _internal_set_file_id(from._internal_file_id());
   }
-  if (from.data().size() > 0) {
+  if (!from._internal_data().empty()) {
     _internal_set_data(from._internal_data());
   }
-  if (from.slide_no() != 0) {
+  if (from._internal_slide_no() != 0) {
     _internal_set_slide_no(from._internal_slide_no());
   }
-}
-
-void SDownload::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SDownload)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SDownload::CopyFrom(const SDownload& from) {
@@ -2096,16 +1958,25 @@ bool SDownload::IsInitialized() const {
 
 void SDownload::InternalSwap(SDownload* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  file_id_.Swap(&other->file_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  data_.Swap(&other->data_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &file_id_, lhs_arena,
+      &other->file_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &data_, lhs_arena,
+      &other->data_, rhs_arena
+  );
   swap(slide_no_, other->slide_no_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SDownload::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[6]);
 }
-
 
 // ===================================================================
 
@@ -2113,10 +1984,10 @@ class SDeleteFile::_Internal {
  public:
 };
 
-SDeleteFile::SDeleteFile(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SDeleteFile::SDeleteFile(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SDeleteFile)
 }
 SDeleteFile::SDeleteFile(const SDeleteFile& from)
@@ -2126,38 +1997,30 @@ SDeleteFile::SDeleteFile(const SDeleteFile& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SDeleteFile)
 }
 
-void SDeleteFile::SharedCtor() {
-  state_ = 0;
+inline void SDeleteFile::SharedCtor() {
+state_ = 0;
 }
 
 SDeleteFile::~SDeleteFile() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SDeleteFile)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SDeleteFile::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SDeleteFile::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SDeleteFile::ArenaDtor(void* object) {
-  SDeleteFile* _this = reinterpret_cast< SDeleteFile* >(object);
-  (void)_this;
-}
-void SDeleteFile::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SDeleteFile::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SDeleteFile& SDeleteFile::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SDeleteFile_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SDeleteFile::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SDeleteFile)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2165,56 +2028,57 @@ void SDeleteFile::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SDeleteFile::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SDeleteFile::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SDeleteFile::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SDeleteFile::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SDeleteFile)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SDeleteFile)
@@ -2225,58 +2089,41 @@ size_t SDeleteFile::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SDeleteFile)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SDeleteFile::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SDeleteFile)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SDeleteFile* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SDeleteFile>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SDeleteFile)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SDeleteFile)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SDeleteFile::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SDeleteFile::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SDeleteFile::GetClassData() const { return &_class_data_; }
+
+void SDeleteFile::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SDeleteFile *>(to)->MergeFrom(
+      static_cast<const SDeleteFile &>(from));
 }
+
 
 void SDeleteFile::MergeFrom(const SDeleteFile& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SDeleteFile)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SDeleteFile::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SDeleteFile)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SDeleteFile::CopyFrom(const SDeleteFile& from) {
@@ -2292,14 +2139,15 @@ bool SDeleteFile::IsInitialized() const {
 
 void SDeleteFile::InternalSwap(SDeleteFile* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SDeleteFile::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[7]);
 }
-
 
 // ===================================================================
 
@@ -2307,10 +2155,10 @@ class SAddDirectory::_Internal {
  public:
 };
 
-SAddDirectory::SAddDirectory(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SAddDirectory::SAddDirectory(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SAddDirectory)
 }
 SAddDirectory::SAddDirectory(const SAddDirectory& from)
@@ -2320,38 +2168,30 @@ SAddDirectory::SAddDirectory(const SAddDirectory& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SAddDirectory)
 }
 
-void SAddDirectory::SharedCtor() {
-  state_ = 0;
+inline void SAddDirectory::SharedCtor() {
+state_ = 0;
 }
 
 SAddDirectory::~SAddDirectory() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SAddDirectory)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SAddDirectory::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SAddDirectory::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SAddDirectory::ArenaDtor(void* object) {
-  SAddDirectory* _this = reinterpret_cast< SAddDirectory* >(object);
-  (void)_this;
-}
-void SAddDirectory::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SAddDirectory::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SAddDirectory& SAddDirectory::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SAddDirectory_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SAddDirectory::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SAddDirectory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2359,56 +2199,57 @@ void SAddDirectory::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SAddDirectory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SAddDirectory::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SAddDirectory::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SAddDirectory::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SAddDirectory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SAddDirectory)
@@ -2419,58 +2260,41 @@ size_t SAddDirectory::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SAddDirectory)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SAddDirectory::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SAddDirectory)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SAddDirectory* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SAddDirectory>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SAddDirectory)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SAddDirectory)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SAddDirectory::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SAddDirectory::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SAddDirectory::GetClassData() const { return &_class_data_; }
+
+void SAddDirectory::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SAddDirectory *>(to)->MergeFrom(
+      static_cast<const SAddDirectory &>(from));
 }
+
 
 void SAddDirectory::MergeFrom(const SAddDirectory& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SAddDirectory)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SAddDirectory::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SAddDirectory)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SAddDirectory::CopyFrom(const SAddDirectory& from) {
@@ -2486,14 +2310,15 @@ bool SAddDirectory::IsInitialized() const {
 
 void SAddDirectory::InternalSwap(SAddDirectory* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SAddDirectory::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[8]);
 }
-
 
 // ===================================================================
 
@@ -2501,10 +2326,10 @@ class SDeleteDirectory::_Internal {
  public:
 };
 
-SDeleteDirectory::SDeleteDirectory(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SDeleteDirectory::SDeleteDirectory(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SDeleteDirectory)
 }
 SDeleteDirectory::SDeleteDirectory(const SDeleteDirectory& from)
@@ -2514,38 +2339,30 @@ SDeleteDirectory::SDeleteDirectory(const SDeleteDirectory& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SDeleteDirectory)
 }
 
-void SDeleteDirectory::SharedCtor() {
-  state_ = 0;
+inline void SDeleteDirectory::SharedCtor() {
+state_ = 0;
 }
 
 SDeleteDirectory::~SDeleteDirectory() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SDeleteDirectory)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SDeleteDirectory::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SDeleteDirectory::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SDeleteDirectory::ArenaDtor(void* object) {
-  SDeleteDirectory* _this = reinterpret_cast< SDeleteDirectory* >(object);
-  (void)_this;
-}
-void SDeleteDirectory::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SDeleteDirectory::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SDeleteDirectory& SDeleteDirectory::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SDeleteDirectory_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SDeleteDirectory::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SDeleteDirectory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2553,56 +2370,57 @@ void SDeleteDirectory::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SDeleteDirectory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SDeleteDirectory::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SDeleteDirectory::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SDeleteDirectory::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SDeleteDirectory)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SDeleteDirectory)
@@ -2613,58 +2431,41 @@ size_t SDeleteDirectory::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SDeleteDirectory)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SDeleteDirectory::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SDeleteDirectory)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SDeleteDirectory* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SDeleteDirectory>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SDeleteDirectory)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SDeleteDirectory)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SDeleteDirectory::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SDeleteDirectory::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SDeleteDirectory::GetClassData() const { return &_class_data_; }
+
+void SDeleteDirectory::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SDeleteDirectory *>(to)->MergeFrom(
+      static_cast<const SDeleteDirectory &>(from));
 }
+
 
 void SDeleteDirectory::MergeFrom(const SDeleteDirectory& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SDeleteDirectory)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SDeleteDirectory::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SDeleteDirectory)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SDeleteDirectory::CopyFrom(const SDeleteDirectory& from) {
@@ -2680,14 +2481,15 @@ bool SDeleteDirectory::IsInitialized() const {
 
 void SDeleteDirectory::InternalSwap(SDeleteDirectory* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SDeleteDirectory::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[9]);
 }
-
 
 // ===================================================================
 
@@ -2695,10 +2497,10 @@ class SModifyUser::_Internal {
  public:
 };
 
-SModifyUser::SModifyUser(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SModifyUser::SModifyUser(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:SyncCloudDrive.SModifyUser)
 }
 SModifyUser::SModifyUser(const SModifyUser& from)
@@ -2708,38 +2510,30 @@ SModifyUser::SModifyUser(const SModifyUser& from)
   // @@protoc_insertion_point(copy_constructor:SyncCloudDrive.SModifyUser)
 }
 
-void SModifyUser::SharedCtor() {
-  state_ = 0;
+inline void SModifyUser::SharedCtor() {
+state_ = 0;
 }
 
 SModifyUser::~SModifyUser() {
   // @@protoc_insertion_point(destructor:SyncCloudDrive.SModifyUser)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SModifyUser::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SModifyUser::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SModifyUser::ArenaDtor(void* object) {
-  SModifyUser* _this = reinterpret_cast< SModifyUser* >(object);
-  (void)_this;
-}
-void SModifyUser::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SModifyUser::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SModifyUser& SModifyUser::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SModifyUser_server_5fto_5fclient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SModifyUser::Clear() {
 // @@protoc_insertion_point(message_clear_start:SyncCloudDrive.SModifyUser)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2747,56 +2541,57 @@ void SModifyUser::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SModifyUser::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SModifyUser::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 state = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SModifyUser::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SModifyUser::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SyncCloudDrive.SModifyUser)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
+  if (this->_internal_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SyncCloudDrive.SModifyUser)
@@ -2807,58 +2602,41 @@ size_t SModifyUser::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SyncCloudDrive.SModifyUser)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // int32 state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_state());
+  if (this->_internal_state() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SModifyUser::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SyncCloudDrive.SModifyUser)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SModifyUser* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SModifyUser>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SyncCloudDrive.SModifyUser)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SyncCloudDrive.SModifyUser)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SModifyUser::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SModifyUser::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SModifyUser::GetClassData() const { return &_class_data_; }
+
+void SModifyUser::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SModifyUser *>(to)->MergeFrom(
+      static_cast<const SModifyUser &>(from));
 }
+
 
 void SModifyUser::MergeFrom(const SModifyUser& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SyncCloudDrive.SModifyUser)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.state() != 0) {
+  if (from._internal_state() != 0) {
     _internal_set_state(from._internal_state());
   }
-}
-
-void SModifyUser::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SyncCloudDrive.SModifyUser)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SModifyUser::CopyFrom(const SModifyUser& from) {
@@ -2874,49 +2652,61 @@ bool SModifyUser::IsInitialized() const {
 
 void SModifyUser::InternalSwap(SModifyUser* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(state_, other->state_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SModifyUser::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_server_5fto_5fclient_2eproto_getter, &descriptor_table_server_5fto_5fclient_2eproto_once,
+      file_level_metadata_server_5fto_5fclient_2eproto[10]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace SyncCloudDrive
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SRegister* Arena::CreateMaybeMessage< ::SyncCloudDrive::SRegister >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SRegister*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SRegister >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SRegister >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SLogin* Arena::CreateMaybeMessage< ::SyncCloudDrive::SLogin >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SLogin*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SLogin >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SLogin >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync_File* Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync_File >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync_File*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync_File >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SSync_File >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync_Directory* Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync_Directory >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync_Directory*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync_Directory >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SSync_Directory >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync* Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SSync*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SSync >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SSync >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SUploadFile* Arena::CreateMaybeMessage< ::SyncCloudDrive::SUploadFile >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SUploadFile*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SUploadFile >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SUploadFile >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDownload* Arena::CreateMaybeMessage< ::SyncCloudDrive::SDownload >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDownload*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SDownload >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SDownload >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDeleteFile* Arena::CreateMaybeMessage< ::SyncCloudDrive::SDeleteFile >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDeleteFile*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SDeleteFile >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SDeleteFile >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SAddDirectory* Arena::CreateMaybeMessage< ::SyncCloudDrive::SAddDirectory >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SAddDirectory*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SAddDirectory >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SAddDirectory >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDeleteDirectory* Arena::CreateMaybeMessage< ::SyncCloudDrive::SDeleteDirectory >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SDeleteDirectory*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SDeleteDirectory >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SDeleteDirectory >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SModifyUser* Arena::CreateMaybeMessage< ::SyncCloudDrive::SModifyUser >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::SyncCloudDrive::SModifyUser*
+Arena::CreateMaybeMessage< ::SyncCloudDrive::SModifyUser >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SyncCloudDrive::SModifyUser >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
