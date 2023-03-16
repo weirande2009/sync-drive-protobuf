@@ -21,18 +21,19 @@ message SLogin{
     int32 state = 1;                            // login state
 };
 
+message File{
+    string id = 1;                          // file id
+    string name = 2;                        // file name
+    string md5 = 3;                         // file md5
+}
+message Directory{
+    string id = 1;                          // directory id
+    string name = 2;                        // directory name
+    repeated Directory sons = 3;            // sons
+    repeated File files = 4;                // files
+}
+
 message SSync{
-    message File{
-        string id = 1;                          // file id
-        string name = 2;                        // file name
-        string md5 = 3;                         // file md5
-    }
-    message Directory{
-        string id = 1;                          // directory id
-        string name = 2;                        // directory name
-        repeated Directory sons = 3;            // sons
-        repeated File files = 4;                // files
-    }
     int32 state = 1;                            // state of sync. 0-ok, 1-sync
     Directory root = 2;                         // root directory
 };

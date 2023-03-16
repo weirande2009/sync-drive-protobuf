@@ -1,0 +1,31 @@
+syntax = "proto3";
+package SyncCloudDriveFrontend;
+
+enum ClientCommandType{
+    C_REGISTER = 0;
+    C_LOGIN = 1;
+    C_START = 2;
+    C_END = 3;
+    C_MODIFY_USER = 4;
+}
+
+/* Register info from client to server */
+message CRegister{
+    string name = 1;                            // player name
+    string password_md5 = 2;                    // password in md5
+};
+
+/* Login info from client to server */
+message CLogin{
+    string name = 1;                            // player name
+    string password_md5 = 2;                    // password in md5
+};
+
+message CStart{
+    string sync_directory_path = 1;             // player name
+};
+
+message CModifyUser{
+    int32 type = 1;                             // modification type
+    string content = 2;                         // content of the modification
+};

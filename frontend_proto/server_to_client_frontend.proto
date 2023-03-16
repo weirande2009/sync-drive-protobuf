@@ -1,0 +1,31 @@
+syntax = "proto3";
+package SyncCloudDriveFrontend;
+
+enum ServerCommandType{
+    S_REGISTER = 0;
+    S_LOGIN = 1;
+    S_START= 2;
+    S_END= 3;
+    S_MODIFY_USER = 4;
+}
+
+message SRegister{
+    int32 state = 1;                            // register state
+};
+
+message SLogin{
+    int32 state = 1;                            // login state
+};
+
+message SStart{
+    int32 state = 1;                            // start sync
+};
+
+message SEnd{
+    int32 state = 1;                            // end sync
+};
+
+message SModifyUser{
+    int32 state = 1;                            // modify state
+};
+
